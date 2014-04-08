@@ -1,0 +1,95 @@
+/* || basic set up + sizing for containers */
+
+html, body {
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: white;
+}
+
+body {
+  width: 100%;
+  height: inherit;
+}
+
+.text-indicator {
+  display: inline-block;
+  color: white;
+  background-color: gray;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.75));
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.text-indicator p {
+  margin: 0;
+}
+
+h1, body > p {
+  margin-left: 1rem;
+}
+
+/* || install button */
+
+#install {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  background: linear-gradient(to bottom, #7B72D8, #2618B1);
+	  color: white;
+	  text-shadow: 1px 1px 1px black;
+	  border: 1px solid rgba(0,0,0,0.1);
+	  box-shadow: inset 0px 5px 3px rgba(255,255,255,0.2),
+	              inset 0px -5px 3px rgba(0,0,0,0.2);
+  margin: 1rem;
+}
+
+/* || visual battery indicator */
+
+.icon-indicator {
+  position: relative;
+  width: 4rem;
+  height: 3.1rem;
+  background-color: gray;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2),rgba(0,0,0,0.55) 70%);
+  margin: 1rem;
+  border-radius: 2px;
+}
+
+#battery-top {
+  position: absolute;
+  height: 1.3rem;
+  width: 0.7rem;
+  top: 0.9rem;
+  right: -0.7rem;
+  background-color: gray;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.55) 70%);
+  border-radius: 0 2px 2px 0;
+}
+
+#battery-charge {
+  position: absolute;
+  left: 0;
+  height: 3.1rem;
+  background-color: yellow;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.3) 70%);
+}
+
+#battery-charging {
+  position: absolute;
+  left: 0;
+  height: 3.1rem;
+  width: 4rem;
+  background: url(../images/battery.svg) center no-repeat;
+  background-size: 60% 70%;
+}
